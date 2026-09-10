@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=STM32G431C6T6
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=48
+Version=2.1
+Released=2020-03-03 10:54:52
+Downloaded=2026-08-20 17:01:41
+3D=Y

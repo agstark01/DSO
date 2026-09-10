@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'HCF4051BE'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "HCF4051BE" (!) = "", "DIP850W50P254L2000H510Q16N", "Dual-In-Line Packages", "", "", "", "", "Single 8-channel analog multiplexer/demultiplexer", "https://www.st.com/resource/en/datasheet/hcf4051.pdf", "5.1 mm"
+END_PART
+
+END.

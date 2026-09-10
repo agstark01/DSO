@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "HCF4051BE"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-01-15-15:20:32)
+    (mountForm default
+        (footprintRef "DIP850W50P254L2000H510Q16N")
+        (spec "System")
+    )
+)

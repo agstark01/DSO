@@ -1,0 +1,201 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "HCF4051BE"
+   (description "Single 8-channel analog multiplexer/demultiplexer")
+   (family "ANA")
+   (package "DIP850W50P254L2000H510Q16N")
+   (attribute "Datasheet Link" "https://www.st.com/resource/en/datasheet/hcf4051.pdf")
+   (attribute "Geometry.Height" "5.1mm")
+   (attribute "Manufacturer_Name" "STMicroelectronics")
+   (attribute "Manufacturer_Part_Number" "HCF4051BE")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "HCF4051BE")
+    (pin "CHANNELS_IN/OUT_4" 1 PS)
+    (pin "CHANNELS__IN/OUT_6" 2 PS)
+    (pin "COM_OUT/IN" 3 PS)
+    (pin "CHANNELS__IN/OUT_7" 4 PS)
+    (pin "CHANNELS__IN/OUT_5" 5 PS)
+    (pin "INH" 6 PS)
+    (pin "VEE" 7 PS)
+    (pin "VSS" 8 PS)
+    (pin "VDD" 16 PS)
+    (pin "CHANNELS__IN/OUT_2" 15 PS)
+    (pin "CHANNELS__IN/OUT_1" 14 PS)
+    (pin "CHANNELS__IN/OUT_0" 13 PS)
+    (pin "CHANNELS__IN/OUT_3" 12 PS)
+    (pin "A" 11 PS)
+    (pin "B" 10 PS)
+    (pin "C" 9 PS)
+   )
+  )
+  (symbol "HCF4051BE"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 2300 100) (pt 2300 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2500 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "DIP850W50P254L2000H510Q16N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.05 10.25)
+      (pt 5.05 10.25)
+      (pt 5.05 -10.25)
+      (pt -5.05 -10.25)
+      (pt -5.05 10.25))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.55 10)
+      (pt 3.55 10)
+      (pt 3.55 -10)
+      (pt -3.55 -10)
+      (pt -3.55 10))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.55 8.73)
+      (pt -2.28 10))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -4.8 10)
+      (pt 3.55 10))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.55 -10)
+      (pt 3.55 -10))))
+   (leg 1 (pt -4.25 8.89) (padstack 1))
+   (leg 2 (pt -4.25 6.35) (padstack 0))
+   (leg 3 (pt -4.25 3.81) (padstack 0))
+   (leg 4 (pt -4.25 1.27) (padstack 0))
+   (leg 5 (pt -4.25 -1.27) (padstack 0))
+   (leg 6 (pt -4.25 -3.81) (padstack 0))
+   (leg 7 (pt -4.25 -6.35) (padstack 0))
+   (leg 8 (pt -4.25 -8.89) (padstack 0))
+   (leg 9 (pt 4.25 -8.89) (padstack 0))
+   (leg 10 (pt 4.25 -6.35) (padstack 0))
+   (leg 11 (pt 4.25 -3.81) (padstack 0))
+   (leg 12 (pt 4.25 -1.27) (padstack 0))
+   (leg 13 (pt 4.25 1.27) (padstack 0))
+   (leg 14 (pt 4.25 3.81) (padstack 0))
+   (leg 15 (pt 4.25 6.35) (padstack 0))
+   (leg 16 (pt 4.25 8.89) (padstack 0))
+   (padstack 0
+    (hole 0.7)
+    (plated true)
+    (pad (layer TCOP) (round 1.1))
+    (pad (layer INNER) (round 1.1))
+    (pad (layer BCOP) (round 1.1))
+   )
+   (padstack 1
+    (hole 0.7)
+    (plated true)
+    (pad (layer TCOP) (square 1.1))
+    (pad (layer INNER) (round 1.1))
+    (pad (layer BCOP) (square 1.1))
+   )
+   (model "HCF4051BE.stp"
+    (euler 90 0 90)
+    (offset -3.809999942779541 9.039999961853027 1.2999999523162842)
+   )
+  )
+ )
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HCF4051BE
+D Single 8-channel analog multiplexer/demultiplexer
+K
+F https://www.st.com/resource/en/datasheet/hcf4051.pdf
+$ENDCMP
+#
+#End Doc Library
