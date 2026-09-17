@@ -7325,6 +7325,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 11.43) (xy 217.17 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6dd103-b3d2-480f-a7ab-f34dd9ecbdfd")
+	)
+	(wire
+		(pts
 			(xy 189.23 67.31) (xy 194.31 67.31)
 		)
 		(stroke
@@ -8025,16 +8035,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 11.43) (xy 217.17 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0ef7430-4f0d-44a9-a9a3-59291452dc5e")
-	)
-	(wire
-		(pts
 			(xy 232.41 124.46) (xy 240.03 124.46)
 		)
 		(stroke
@@ -8112,16 +8112,6 @@
 			(type default)
 		)
 		(uuid "a5ebf84e-0eda-426d-aa9d-36bf3afb5368")
-	)
-	(wire
-		(pts
-			(xy 278.13 60.96) (xy 265.43 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6a35ec2-439b-4913-b1e5-b287c52d5eed")
 	)
 	(wire
 		(pts
@@ -9203,6 +9193,16 @@
 		)
 		(uuid "1df4d23d-b514-4549-8cee-613ab3bba0c4")
 	)
+	(label "3v3_digi"
+		(at 182.88 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2177b6a6-25ed-4186-8f70-cc0c17c24cbb")
+	)
 	(label "pwmout1"
 		(at 62.23 130.81 0)
 		(effects
@@ -9223,7 +9223,7 @@
 		)
 		(uuid "22b82d36-c3d2-49d7-8e51-157b23c51593")
 	)
-	(label "3v3"
+	(label "3v3_digi"
 		(at 205.74 21.59 0)
 		(effects
 			(font
@@ -9404,7 +9404,7 @@
 		(uuid "50f104f7-ad16-48b3-9657-c60b42736956")
 	)
 	(label "3v3"
-		(at 217.17 17.78 0)
+		(at 217.17 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9773,7 +9773,7 @@
 		)
 		(uuid "919f5153-4021-424f-a3ed-478cbea8c176")
 	)
-	(label "3v3"
+	(label "3v3_digi"
 		(at 212.09 16.51 0)
 		(effects
 			(font
@@ -9974,7 +9974,7 @@
 		(uuid "b3fc5eee-5637-4cd3-8b79-ef18f4b5892c")
 	)
 	(label "3v3"
-		(at 265.43 60.96 0)
+		(at 278.13 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
