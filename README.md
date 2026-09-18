@@ -1,6 +1,6 @@
 # DSO
 Making a digital oscilloscope for frequency range upto 500khz and voltage range upto +-10V. Sharing the waveforms via pc communication to project it on gui using USB2.0 1MBps speed
-## You can see full schematics in assessment1/DSO_1draft/DSO_1draft.pdf
+## You can see full schematics in [DSO_1draft.pdf](assessment1/DSO_1draft/DSO_1draft.pdf).
 
 ## Hardware Subsystems & Circuit Schematics
 
