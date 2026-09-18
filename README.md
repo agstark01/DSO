@@ -26,7 +26,7 @@ Filters a high-frequency PWM signal from the microcontroller through a low-pass 
 ---
 
 ### 4. Symmetric Dual Supply Generation (±5V)
-Generates clean positive (+5V) and negative (-5V) rails to supply the operational amplifiers, providing the necessary headroom and swing for true bipolar signal conditioning.
+Generates clean positive (this stage is updated please see pdf) (+5V) and negative (-5V) rails to supply the operational amplifiers, providing the necessary headroom and swing for true bipolar signal conditioning.
 
 ![±5V Supply Generator](asset/gen_5and-5.png)
 
