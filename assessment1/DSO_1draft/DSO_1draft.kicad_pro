@@ -795,7 +795,7 @@
         "uuid": "46b0ac3e-f5a2-4118-83af-5681c1f36d27"
       }
     ],
-    "used_designators": "C1-30,C35,anlgLDO1,D1-2,U1-3,pwmoppamp1,#FLG1-4,V1,#PWR1-30,#PWR37-38,#PWR46,R1-48,funcopamp1,probopamp1,L1,dcdciso1,J1-8,digildo1",
+    "used_designators": "dcdciso1,L1,digildo1,J1-8,C1-30,C35,anlgLDO1,D1-2,U1-3,pwmoppamp1,#FLG1-4,V1,#PWR1-30,#PWR37-38,#PWR46,R1-48,funcopamp1,probopamp1",
     "variants": []
   },
   "sheets": [
