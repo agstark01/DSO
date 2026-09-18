@@ -16,8 +16,8 @@ C34,1,100n,,,,,${EXCLUDE_FROM_POS_FILES},,
 dcdciso1,1,RO-053.3S_HP,,,,,${EXCLUDE_FROM_POS_FILES},RO-053.3S_HP:CONV_RO-053.3S_HP,
 digildo1,1,AMS1117-3.3,,,,,${EXCLUDE_FROM_POS_FILES},AMS1117-3.3:SOT229P700X180-4N,
 funcopamp1,1,NE5532DR,,,,,${EXCLUDE_FROM_POS_FILES},NE5532DR:SOIC127P599X175-8N,
-J1,1,USB_A,,,,,${EXCLUDE_FROM_POS_FILES},,
-"J2,J3,J4,J5",4,Conn_Coaxial,,,,,${EXCLUDE_FROM_POS_FILES},,
+J1,1,"USB_A , sym and ftprnt have to chg to double usb",,,,,${EXCLUDE_FROM_POS_FILES},,
+"J2,J3,J4,J5",4,Conn_Coaxial (shriniwas comp),,,,,${EXCLUDE_FROM_POS_FILES},,
 J6,1,Conn_ARM_JTAG_SWD_10,,,,,${EXCLUDE_FROM_POS_FILES},,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf
 J8,1,Conn_01x20,,,,,${EXCLUDE_FROM_POS_FILES},,
 L1,1,6.8u,,,,,${EXCLUDE_FROM_POS_FILES},,
@@ -36,4 +36,4 @@ R34,1,2K,,,,,${EXCLUDE_FROM_POS_FILES},,
 R46,1,1M,,,,,${EXCLUDE_FROM_POS_FILES},,
 SW1,1,SW_SPDT,,,,,${EXCLUDE_FROM_POS_FILES},,
 "U1,U2",2,ADG708BRUZ,,,,,${EXCLUDE_FROM_POS_FILES},ADG708BRUZ:TSSOP16,
-U3,1,STM32G431C6Tx,,,,,${EXCLUDE_FROM_POS_FILES},Package_QFP:LQFP-48_7x7mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32g431c6.pdf
+U3,2,STM32G431C6Tx,,,,,${EXCLUDE_FROM_POS_FILES},Package_QFP:LQFP-48_7x7mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32g431c6.pdf
