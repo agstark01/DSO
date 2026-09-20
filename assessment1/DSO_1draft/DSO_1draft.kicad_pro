@@ -537,7 +537,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "${PROJECTNAME}2.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -795,7 +795,7 @@
         "uuid": "46b0ac3e-f5a2-4118-83af-5681c1f36d27"
       }
     ],
-    "used_designators": "dcdciso1,L1,digildo1,J1-8,C1-30,C35,anlgLDO1,D1-2,U1-3,pwmoppamp1,#FLG1-4,V1,#PWR1-30,#PWR37-38,#PWR46,R1-48,funcopamp1,probopamp1",
+    "used_designators": "#PWR1-30,#PWR37-38,#PWR46-47,V1,#FLG1-4,L1,probopamp1,R1-48,R56,SW2,dcdciso1,J1-9,funcopamp1,digildo1,anlgLDO1,C1-30,C35-41,pwmoppamp1,D1-2,U1-3",
     "variants": []
   },
   "sheets": [
