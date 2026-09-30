@@ -1,0 +1,12 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "DCDisolator") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/charge_pump/isolated/RO-053.3S_HP") (options "") (descr ""))
+	(lib (name "FuncOPAMP") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/quad_oamp/latest_funcgen/NE5532DR") (options "") (descr ""))
+	(lib (name "pwmopamp") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents//quad_oamp/latest_pwm/ul_TLV9054IPWR/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "probingopamp") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/quad_oamp/latest_probingpath/TLV9064IPWT") (options "") (descr ""))
+	(lib (name "digilDO") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/LDO/Digital LDO/AMS1117-3.3") (options "") (descr ""))
+	(lib (name "analogLDO") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/LDO/Analog LDO/LP5907MFX-3.3_NOPB") (options "") (descr ""))
+	(lib (name "TVSdiode") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/TVS/P6KE13CA") (options "") (descr ""))
+	(lib (name "Analog_mux") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/Analog_MUX/ADG708BRUZ") (options "") (descr ""))
+	(lib (name "Slide_switch") (type "KiCad") (uri "${KIPRJMOD}/../../NewComponents/slide_switch") (options "") (descr ""))
+)

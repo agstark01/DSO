@@ -8203,7 +8203,7 @@
 	(footprint "probingopamp:SOP65P640X120-14N"
 		(layer "F.Cu")
 		(uuid "54bf1af7-dce1-448c-bec2-e15a8045a93b")
-		(at 90.87 97.3)
+		(at 102.88 88.45)
 		(property "Reference" "probopamp1"
 			(at -0.595 -3.435 0)
 			(layer "F.SilkS")
@@ -13032,7 +13032,7 @@
 	(footprint "pwmopamp:U_TSSOP_PW_TEX-M"
 		(layer "F.Cu")
 		(uuid "7aeb2d70-24ef-4e9c-8264-530fc0be6342")
-		(at 99.05435 135.050001)
+		(at 103.5 119)
 		(tags "TLV9054IPWR ")
 		(property "Reference" "pwmoppamp1"
 			(at 0 0 0)
@@ -24137,7 +24137,7 @@
 	(footprint "FuncOPAMP:SOIC127P599X175-8N"
 		(layer "F.Cu")
 		(uuid "deb64fe2-7c1d-417b-a9a1-1d128c2d3e39")
-		(at 110.745 203.0325)
+		(at 111.28 116.155)
 		(property "Reference" "funcopamp1"
 			(at -0.385 -3.537 0)
 			(layer "F.SilkS")
