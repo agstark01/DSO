@@ -1,0 +1,168 @@
+import pcbnew
+
+board = pcbnew.GetBoard()
+
+# Target coordinates: "Ref": (X_mm, Y_mm, Rotation_deg, Flip_to_Back_Layer)
+layout_plan = {
+    # --- 1. TOP EDGE: 4x Horizontal BNC Connectors (16.5mm pitch) ---
+    "J5": (109.0, 92.5, 0, False),    # funcout2
+    "J4": (125.5, 92.5, 0, False),    # funcout1
+    "J3": (142.0, 92.5, 0, False),    # probA (Ch A Input)
+    "J2": (158.5, 92.5, 0, False),    # probB (Ch B Input)
+
+    # --- 2. ANALOG FRONT-END: Input Protection & Attenuators (Right Side) ---
+    "R38": (142.0, 97.5, 0, False),   # Ch A series 1k
+    "D1":  (136.0, 99.5, -90, False), # Ch A TVS P6KE13CA
+    "R16": (145.5, 101.0, -90, False),
+    "R39": (158.5, 97.5, 0, False),   # Ch B series 1k
+    "D2":  (152.5, 99.5, -90, False), # Ch B TVS P6KE13CA
+    "R14": (162.0, 101.0, -90, False),
+
+    # --- 3. ANALOG MUXES: U1 (Ch A) & U2 (Ch B) + Gain Ladders ---
+    "U1":  (142.0, 108.5, -90, False), # Ch A ADG708 directly under J3!
+    "R22": (136.5, 105.0, 0, False),
+    "R23": (136.5, 107.2, 0, False),
+    "R24": (136.5, 109.4, 0, False),
+    "R25": (136.5, 111.6, 0, False),
+    "R26": (147.5, 105.0, 0, False),
+    "R27": (147.5, 107.2, 0, False),
+    "R28": (147.5, 109.4, 0, False),
+    "R29": (147.5, 111.6, 0, True),    # B.Cu
+
+    "U2":  (158.5, 108.5, -90, False), # Ch B ADG708 directly under J2!
+    "R30": (153.0, 105.0, 0, False),
+    "R31": (153.0, 107.2, 0, False),
+    "R32": (153.0, 109.4, 0, False),
+    "R33": (153.0, 111.6, 0, False),
+    "R34": (164.0, 105.0, 0, False),
+    "R35": (164.0, 107.2, 0, False),
+    "R36": (164.0, 109.4, 0, False),
+    "R37": (164.0, 111.6, 0, True),    # B.Cu
+
+    # --- 4. PROBING OP-AMP (TLV9064) & Anti-Aliasing Filters ---
+    "probopamp1": (150.5, 119.5, 0, False),
+    "C22": (144.5, 116.5, 0, False),   # Ch A 10p feedback
+    "C20": (156.5, 116.5, 0, False),   # Ch B 10p feedback
+    "R42": (143.5, 119.0, 0, False),
+    "R43": (143.5, 121.2, 0, False),
+    "C27": (143.5, 123.4, 0, False),
+    "C28": (143.5, 125.6, 0, False),
+    "R44": (139.0, 121.2, 0, False),
+    "R45": (139.0, 123.4, 0, False),
+    "C29": (139.0, 125.6, 0, False),
+    "C30": (139.0, 127.8, 0, False),
+
+    "R40": (157.5, 119.0, 0, False),
+    "R41": (157.5, 121.2, 0, False),
+    "C25": (157.5, 123.4, 0, False),
+    "C26": (157.5, 125.6, 0, False),
+    "R15": (162.5, 119.0, 0, False),
+    "R21": (162.5, 121.2, 0, False),
+    "C23": (162.5, 123.4, 0, False),
+    "C24": (162.5, 125.6, 0, False),
+
+    # --- 5. PWM-TO-DC LPF STAGE (Compact Border Cluster) ---
+    "pwmoppamp1": (155.0, 134.0, 0, False),
+    "R3":  (147.0, 130.5, 0, False),
+    "R4":  (147.0, 132.7, 0, False),
+    "R47": (147.0, 134.9, 0, False),
+    "C9":  (147.0, 137.1, 0, False),
+    "C10": (147.0, 139.3, 0, False),
+    "C36": (151.5, 139.3, 0, False),
+    "R5":  (162.5, 130.5, 0, False),
+    "R6":  (162.5, 132.7, 0, True),
+    "R7":  (162.5, 134.9, 0, False),
+    "C11": (162.5, 137.1, 0, False),
+    "C12": (162.5, 139.3, 0, False),
+    "C13": (157.5, 139.3, 0, False),
+    "R8":  (147.0, 132.7, 0, True),
+    "R9":  (147.0, 134.9, 0, True),
+    "R10": (147.0, 137.1, 0, True),
+    "C14": (151.5, 130.5, 0, False),
+    "C15": (151.5, 132.7, 0, true if False else False),
+    "C16": (151.5, 134.9, 0, True),
+    "C38": (151.5, 137.1, 0, False),
+    "R11": (162.5, 130.5, 0, True),
+    "R12": (162.5, 134.9, 0, True),
+    "C17": (157.5, 130.5, 0, False),
+    "C18": (157.5, 137.1, 0, False),
+    "C19": (162.5, 137.1, 0, True),
+    "C39": (162.5, 139.3, 0, True),
+
+    # --- 6. MCU (STM32G431) & Decoupling & Headers ---
+    "U3":  (131.0, 126.0, 180, False),
+    "C31": (131.0, 118.5, 0, False),
+    "C32": (135.0, 118.5, 0, False),
+    "C21": (131.0, 126.0, 0, True),    # Under MCU on B.Cu
+    "R56": (124.0, 122.0, 0, False),   # NRST pullup
+    "J1":  (139.0, 131.0, 0, False),   # 1x05 SWD Header right next to PA13/PA14
+    "J8":  (118.0, 141.0, -90, False), # 2x10 Header row 1
+    "J9":  (142.0, 143.5, 90, False),  # 2x10 Header row 2
+
+    # --- 7. FUNCTION GENERATOR (NE5532) Behind J4/J5 ---
+    "funcopamp1": (117.5, 104.0, 0, False),
+    "R17": (111.5, 101.5, 0, False),
+    "R18": (111.5, 103.7, 0, False),
+    "R19": (123.5, 101.5, 0, False),
+    "R20": (123.5, 103.7, 0, False),
+
+    # --- 8. POWER SUPPLY, USB-A & SWITCHES (Left Edge) ---
+    "dcdciso1": (106.0, 110.0, -90, False),
+    "L1":  (102.0, 115.0, 90, False),
+    "R1":  (112.0, 112.0, 90, False),
+    "C1":  (115.5, 113.0, 0, False),
+    "C2":  (106.0, 104.0, 0, False),
+    "C3":  (115.5, 115.2, 0, False),
+    "C42": (115.5, 117.4, 0, False),
+    "C44": (106.0, 118.0, 0, False),
+    "anlgLDO1": (121.0, 114.0, 0, False),
+    "C6":  (125.0, 113.0, 0, False),
+    "C7":  (125.0, 115.2, 0, False),
+    "digildo1": (121.0, 120.0, 0, False),
+
+    "J7":  (103.5, 132.0, 0, False),   # Stacked USB-A on Left Edge
+    "R46": (102.0, 122.0, 0, False),
+    "C35": (108.0, 122.0, 0, False),
+    "SW1": (114.0, 124.0, 180, False),
+    "SW2": (124.0, 118.0, 0, False),
+    "SW3": (114.0, 130.5, 0, False),
+    "SW4": (114.0, 137.0, 180, False),
+    "SW5": (114.0, 143.5, 0, False),
+
+    # --- 9. STATUS LEDs (Compact Bank) ---
+    "R49": (121.5, 126.0, 0, False), "D3": (126.0, 126.0, 0, False),
+    "R50": (121.5, 128.2, 0, False), "D4": (126.0, 128.2, 180, False),
+    "R51": (121.5, 130.4, 0, False), "D5": (126.0, 130.4, 180, False),
+    "R52": (121.5, 132.6, 0, False), "D6": (126.0, 132.6, 180, False),
+    "R53": (121.5, 134.8, 0, False), "D7": (126.0, 134.8, 180, False),
+    "R54": (121.5, 137.0, 0, False), "D8": (126.0, 137.0, 180, False),
+    "R55": (121.5, 139.2, 0, False), "D9": (126.0, 139.2, 180, False),
+}
+
+moved = 0
+for fp in board.GetFootprints():
+    ref = fp.GetReference()
+    if ref in layout_plan:
+        x, y, rot, flip_back = layout_plan[ref]
+        if flip_back and not fp.IsFlipped():
+            fp.Flip(fp.GetPosition(), False)
+        elif not flip_back and fp.IsFlipped():
+            fp.Flip(fp.GetPosition(), False)
+        fp.SetPosition(pcbnew.VECTOR2I_MM(x, y))
+        fp.SetOrientationDegrees(rot)
+        moved += 1
+
+# Draw new compact 68mm x 58mm board outline on Edge.Cuts (X: 99..167, Y: 90..148)
+edge_layer = board.GetLayerID("Edge.Cuts")
+corners = [(99.0, 90.0), (167.0, 90.0), (167.0, 148.0), (99.0, 148.0)]
+for i in range(4):
+    seg = pcbnew.PCB_SHAPE(board)
+    seg.SetShape(pcbnew.SHAPE_T_SEGMENT)
+    seg.SetLayer(edge_layer)
+    seg.SetStart(pcbnew.VECTOR2I_MM(*corners[i]))
+    seg.SetEnd(pcbnew.VECTOR2I_MM(*corners[(i + 1) % 4]))
+    seg.SetWidth(pcbnew.FromMM(0.15))
+    board.Add(seg)
+
+pcbnew.Refresh()
+print(f"Optimized {moved} footprints into 68x58mm floorplan!")
